@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUTH-TECH</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#3B82F6', // blue-500
+              hover: '#2563EB', // blue-600
+              dark: '#1D4ED8', // blue-700
+            },
+            secondary: '#10B981', // emerald-500
+            accent: '#F59E0B', // amber-500
+            lightgray: '#f3f4f6', // gray-100
+            mediumgray: '#9ca3af', // gray-400
+            darkgray: '#374151', // gray-700
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "jspdf": "https://esm.sh/jspdf@2.5.1",
+    "jspdf-autotable": "https://esm.sh/jspdf-autotable@3.8.2",
+    "papaparse": "https://esm.sh/papaparse@5.4.1",
+    "@google/genai": "https://esm.sh/@google/genai@^1.5.1",
+    "express": "https://esm.sh/express@^5.1.0",
+    "@google-cloud/storage": "https://esm.sh/@google-cloud/storage@^7.16.0",
+    "cors": "https://esm.sh/cors@^2.8.5",
+    "dotenv": "https://esm.sh/dotenv@^16.6.0",
+    "@paypal/checkout-server-sdk": "https://esm.sh/@paypal/checkout-server-sdk@^1.0.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-lightgray">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
